@@ -28,6 +28,7 @@ public class FirstTest {
         Selenide.$(By.cssSelector("button[data-qa-value='USD']")).sendKeys(Keys.ENTER);
         Selenide.$(By.cssSelector("button[type='submit']")).sendKeys(Keys.ENTER);
 
+        //Assert
         Selenide.$(By.cssSelector("div[data-qa-node='total']")).shouldHave(Condition.text("Разом до списання"));
 
     }
